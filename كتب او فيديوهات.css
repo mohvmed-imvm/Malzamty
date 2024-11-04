@@ -1,0 +1,588 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 539px) {
+    body {
+        background-image: url("bg6.png");
+        background-repeat: no-repeat;
+        background-size: 2000px;
+        overflow: auto;
+    }
+    .adress {
+        background-color: rgba(255, 255, 255, 0.904);
+        width: 200px;
+        height: 50px;
+        border: none;
+        border-radius: 10px 0 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+        position: fixed;
+        right: 0;
+        text-decoration: none;
+    }
+    .adress h2 {
+        font-family: "Amiri", serif;
+        color: #000;
+        font-size: 30px;
+    }
+    .hr1 {
+        clear: both;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.342);
+        border: none;
+        position: relative;
+        top: 50px;
+    }
+    .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        flex-direction: column;
+        gap: 20px;
+        height: 100vh; /* تأكد من أن الحاوية تأخذ كامل ارتفاع الشاشة */
+    }
+    .F, .K {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .F button {
+        width: 130px;
+        height: 130px;
+        box-shadow: 0 12px 18px rgba(0, 0, 0, 0.61),0 -4px 18px rgba(0, 0, 0, 0.61);
+        border-radius: 25px;
+        align-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.473);
+        background-color: #1b1f1c;
+        /* backdrop-filter: blur(20px); */
+        cursor: pointer;
+        transition: all ease-in-out 0.3s;
+    }
+    .F button:hover {
+        background-color: #121412;
+    }
+    .F button:hover h2 {
+        color: #e0dfdf;
+    }
+    .F button:hover span {
+        color: #147e47;
+    }
+    .F h2 {
+        font-size: 20px;
+        font-family: "Readex Pro", Arial, Helvetica, sans-serif,serif;
+        font-weight: 300;
+        color: #fff;
+        transition: all ease-in-out 0.3s;
+    }
+    .F span {
+        color: #1daa61;
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 100,
+        'GRAD' 0,
+        'opsz' 48;
+        font-size: 40px;
+        transition: all ease-in-out 0.3s;
+    }
+    .hr2 {
+        display: none;
+        margin-top: 200px;
+        width: 3px;
+        height: 340px;
+        border-radius: 25px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.753);
+    }
+    .K button {
+        width: 130px;
+        height: 130px;
+        box-shadow: 0 12px 18px rgba(0, 0, 0, 0.61),0 -4px 18px rgba(0, 0, 0, 0.61);
+        border-radius: 25px;
+        margin-bottom: 47px;
+        align-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.473);
+        background-color: #1b1f1c;
+        /* backdrop-filter: blur(20px); */
+        cursor: pointer;
+        transition: all ease-in-out 0.3s;
+    }
+    .K button:hover {
+        background-color: #121412;
+    }
+    .K button:hover h2 {
+        color: #e0dfdf;
+    }
+    .K button:hover span {
+        color: #147e47;
+    }
+    .K h2 {
+        font-size: 20px;
+        font-family: "Readex Pro", Arial, Helvetica, sans-serif,serif;
+        font-weight: 300;
+        color: #fff;
+        transition: all ease-in-out 0.3s;
+    }
+    .K span {
+        color: #1daa61;
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 100,
+        'GRAD' 0,
+        'opsz' 48;
+        font-size: 40px;
+        transition: all ease-in-out 0.3s;
+    }
+    .hr3 {
+        position: fixed;
+        bottom: 55px;
+        left: 0;
+        width: 100%;
+        border: none;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.342); /* تقدر تغير اللون حسب رغبتك */
+    }
+}
+@media (min-width: 540px) and (max-width: 768px) {
+    body {
+        background-image: url("bg6.png");
+        background-repeat: no-repeat;
+        background-size: 3000px;
+        overflow: auto;
+    }
+    .adress {
+        background-color: rgba(255, 255, 255, 0.904);
+        width: 200px;
+        height: 50px;
+        border: none;
+        border-radius: 10px 0 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+        position: fixed;
+        right: 0;
+        text-decoration: none;
+    }
+    .adress h2 {
+        font-family: "Amiri", serif;
+        color: #000;
+        font-size: 30px;
+    }
+    .hr1 {
+        clear: both;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.342);
+        border: none;
+        position: relative;
+        top: 50px;
+    }
+    .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        height: 100vh; /* تأكد من أن الحاوية تأخذ كامل ارتفاع الشاشة */
+    }
+    .F, .K {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .F button {
+        width: 200px;
+        height: 230px;
+        margin-right: 30px;
+        box-shadow: 0 12px 18px rgba(0, 0, 0, 0.61),0 -4px 18px rgba(0, 0, 0, 0.61);
+        border-radius: 25px;
+        align-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.473);
+        background-color: #1b1f1c;
+        /* backdrop-filter: blur(20px); */
+        cursor: pointer;
+        transition: all ease-in-out 0.3s;
+    }
+    .F button:hover {
+        background-color: #121412;
+    }
+    .F button:hover h2 {
+        color: #e0dfdf;
+    }
+    .F button:hover span {
+        color: #147e47;
+    }
+    .F h2 {
+        font-size: 30px;
+        font-family: "Readex Pro", Arial, Helvetica, sans-serif,serif;
+        font-weight: 300;
+        color: #fff;
+        margin-top: 10px;
+        transition: all ease-in-out 0.3s;
+    }
+    .F span {
+        color: #1daa61;
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 100,
+        'GRAD' 0,
+        'opsz' 48;
+        font-size: 70px;
+        transition: all ease-in-out 0.3s;
+    }
+    .hr2 {
+        display: none;
+        margin-top: 200px;
+        width: 3px;
+        height: 340px;
+        border-radius: 25px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.753);
+    }
+    .K button {
+        width: 200px;
+        height: 230px;
+        margin-left: 30px;
+        box-shadow: 0 12px 18px rgba(0, 0, 0, 0.61),0 -4px 18px rgba(0, 0, 0, 0.61);
+        border-radius: 25px;
+        align-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.473);
+        background-color: #1b1f1c;
+        /* backdrop-filter: blur(20px); */
+        cursor: pointer;
+        transition: all ease-in-out 0.3s;
+    }
+    .K button:hover {
+        background-color: #121412;
+    }
+    .K button:hover h2 {
+        color: #e0dfdf;
+    }
+    .K button:hover span {
+        color: #147e47;
+    }
+    .K h2 {
+        font-size: 30px;
+        font-family: "Readex Pro", Arial, Helvetica, sans-serif,serif;
+        font-weight: 300;
+        color: #fff;
+        transition: all ease-in-out 0.3s;
+    }
+    .K span {
+        color: #1daa61;
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 100,
+        'GRAD' 0,
+        'opsz' 48;
+        font-size: 70px;
+        transition: all ease-in-out 0.3s;
+    }
+    .hr3 {
+        position: fixed;
+        bottom: 55px;
+        left: 0;
+        width: 100%;
+        border: none;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.342); /* تقدر تغير اللون حسب رغبتك */
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        background-image: url("bg6.png");
+        background-repeat: no-repeat;
+        background-size: 3000px;
+        overflow: auto;
+    }
+    .adress {
+        background-color: rgba(255, 255, 255, 0.904);
+        width: 220px;
+        height: 60px;
+        border: none;
+        border-radius: 10px 0 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        right: 0;
+        text-decoration: none;
+    }
+    .adress h2 {
+        font-family: "Amiri", serif;
+        font-size: 32px;
+        color: #000;
+    }
+    .hr1 {
+        clear: both;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.342);
+        border: none;
+        position: relative;
+        top: 60px;
+    }
+    .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        height: 100vh; /* تأكد من أن الحاوية تأخذ كامل ارتفاع الشاشة */
+    }
+    .F, .K {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 37px;
+    }
+    .F button {
+        width: 240px;
+        height: 270px;
+        margin-right: 60px;
+        box-shadow: 0 12px 18px rgba(0, 0, 0, 0.61),0 -4px 18px rgba(0, 0, 0, 0.61);
+        border-radius: 25px;
+        align-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.473);
+        background-color: #1b1f1c;
+        /* backdrop-filter: blur(20px); */
+        cursor: pointer;
+        transition: all ease-in-out 0.3s;
+    }
+    .F button:hover {
+        background-color: #121412;
+    }
+    .F button:hover h2 {
+        color: #e0dfdf;
+    }
+    .F button:hover span {
+        color: #147e47;
+    }
+    .F h2 {
+        font-size: 40px;
+        font-family: "Readex Pro", Arial, Helvetica, sans-serif,serif;
+        font-weight: 300;
+        color: #fff;
+        transition: all ease-in-out 0.3s;
+    }
+    .F span {
+        color: #1daa61;
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 100,
+        'GRAD' 0,
+        'opsz' 48;
+        font-size: 80px;
+        transition: all ease-in-out 0.3s;
+    }
+    .hr2 {
+        margin-bottom: 37px;
+        width: 3px;
+        height: 300px;
+        border-radius: 25px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.753);
+    }
+    .K button {
+        width: 240px;
+        height: 270px;
+        margin-left: 60px;
+        box-shadow: 0 12px 18px rgba(0, 0, 0, 0.61),0 -4px 18px rgba(0, 0, 0, 0.61);
+        border-radius: 25px;
+        align-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.473);
+        background-color: #1b1f1c;
+        /* backdrop-filter: blur(20px); */
+        cursor: pointer;
+        transition: all ease-in-out 0.3s;
+    }
+    .K button:hover {
+        background-color: #121412;
+    }
+    .K button:hover h2 {
+        color: #e0dfdf;
+    }
+    .K button:hover span {
+        color: #147e47;
+    }
+    .K h2 {
+        font-size: 40px;
+        font-family: "Readex Pro", Arial, Helvetica, sans-serif,serif;
+        font-weight: 300;
+        color: #fff;
+        transition: all ease-in-out 0.3s;
+    }
+    .K span {
+        color: #1daa61;
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 100,
+        'GRAD' 0,
+        'opsz' 48;
+        font-size: 80px;
+        transition: all ease-in-out 0.3s;
+    }
+    .hr3 {
+        position: fixed;
+        bottom: 55px;
+        left: 0;
+        width: 100%;
+        border: none;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.342); /* تقدر تغير اللون حسب رغبتك */
+    }
+}
+@media (min-width: 1025px) {
+    body {
+        background-image: url("bg8.png");
+        background-repeat: no-repeat;
+        background-size: 10000px;
+        overflow: auto;
+    }
+    .adress {
+        background-color: rgba(255, 255, 255, 0.904);
+        width: 300px;
+        height: 70px;
+        border: none;
+        border-radius: 10px 0 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .adress h2 {
+        font-family: "Amiri", serif;
+        color: #000;
+        font-size: 44px;
+    }
+    .hr1 {
+        clear: both;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.342);
+        border: none;
+        position: fixed;
+        top: 70px;
+    }
+    .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* تأكد من أن الحاوية تأخذ كامل ارتفاع الشاشة */
+    }
+    .F, .K {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .F button {
+        width: 290px;
+        height: 320px;
+        margin-right: 90px;
+        box-shadow: 0 12px 18px rgba(0, 0, 0, 0.61),0 -4px 18px rgba(0, 0, 0, 0.61);
+        border-radius: 25px;
+        align-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.473);
+        background-color: #1b1f1c;
+        /* backdrop-filter: blur(20px); */
+        cursor: pointer;
+        transition: all ease-in-out 0.3s;
+    }
+    .F button:hover {
+        background-color: #121412;
+    }
+    .F button:hover h2 {
+        color: #e0dfdf;
+    }
+    .F button:hover span {
+        color: #147e47;
+    }
+    .F h2 {
+        font-size: 50px;
+        font-family: "Readex Pro", Arial, Helvetica, sans-serif,serif;
+        font-weight: 300;
+        color: #fff;
+        transition: all ease-in-out 0.3s;
+    }
+    .F span {
+        color: #1daa61;
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 100,
+        'GRAD' 0,
+        'opsz' 48;
+        font-size: 100px;
+        transition: all ease-in-out 0.3s;
+    }
+    .hr2 {
+        width: 3px;
+        height: 350px;
+        border-radius: 25px;
+        border: none;
+        margin-top: 15px;
+        background-color: rgba(255, 255, 255, 0.753);
+    }
+    .K button {
+        width: 290px;
+        height: 320px;
+        margin-left: 90px;
+        box-shadow: 0 12px 18px rgba(0, 0, 0, 0.61),0 -4px 18px rgba(0, 0, 0, 0.61);
+        border-radius: 25px;
+        align-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.473);
+        background-color: #1b1f1c;
+        /* backdrop-filter: blur(20px); */
+        cursor: pointer;
+        transition: all ease-in-out 0.3s;
+    }
+    .K button:hover {
+        background-color: #121412;
+    }
+    .K button:hover h2 {
+        color: #e0dfdf;
+    }
+    .K button:hover span {
+        color: #147e47;
+    }
+    .K h2 {
+        font-size: 50px;
+        font-family: "Readex Pro", Arial, Helvetica, sans-serif,serif;
+        font-weight: 300;
+        color: #fff;
+        transition: all ease-in-out 0.3s;
+    }
+    .K span {
+        color: #1daa61;
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 100,
+        'GRAD' 0,
+        'opsz' 48;
+        font-size: 100px;
+        transition: all ease-in-out 0.3s;
+    }
+    .hr3 {
+        position: fixed;
+        bottom: 55px;
+        left: 0;
+        width: 100%;
+        border: none;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.342); /* تقدر تغير اللون حسب رغبتك */
+    }
+}

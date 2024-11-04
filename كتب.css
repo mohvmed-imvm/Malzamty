@@ -1,0 +1,714 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 539px) {
+    * {
+        transition: all 1s;
+    }
+    body {
+        background-image: url("bg7.png");
+        background-repeat: no-repeat;
+        background-size: 8000px;
+        margin-top: 90px;
+    }
+    ::-webkit-scrollbar {
+        width: 4px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background-color: #ece8e8;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: #1b1f1c;
+        border-radius: 100px;
+    }
+    .fixed {
+        width: 100%;
+        height: 50px;
+        background-image: url("bg8.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+    }
+    .adress {
+        background-color: rgba(255, 255, 255, 0.904);
+        width: 170px;
+        height: 50px;
+        padding-bottom: 5px;
+        border: none;
+        border-radius: 10px 0 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        float: right;
+    }
+    .fixed a {
+        text-decoration: none;
+    }
+    .adress h2 {
+        font-family: "Amiri", serif;
+        font-size: 30px;
+        color: #000000;
+    }
+    .hr1 {
+        clear: both;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.589);
+        border: none;
+        position: fixed;
+        top: 50px;
+    }
+    
+    .section-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .section-1 div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 350px;
+        height: 75px;
+        background-color: #1b1f1c;
+        border: none;
+        border-radius: 5px;
+        color: #ece8e8;
+        margin: 10px;
+        cursor: pointer;
+        box-shadow: 0 12px 18px rgba(0, 0, 0, 0.23), 0 -4px 18px rgba(0, 0, 0, 0.32);
+        padding: 0 15px; /* عشان تسيب مساحة داخلية يمين وشمال */
+    }
+    .section-1 div:hover {
+        background-color: #222723;
+    }
+    .section-1 span {
+        font-size: 55px;
+        color: #1daa61;
+        position: absolute;
+        order: 1;
+        margin-right: 5px;
+    }
+    .section-1 h2 {
+        font-size: 20px;
+        order: 2; /* بيكون على اليمين */
+        margin-left: auto; /* يدفعه لاقصى اليمين */
+        font-size: 16px; /* تقدر تعدل الحجم حسب احتياجك */
+    }
+    .modal {
+        display: none; 
+        position: fixed; 
+        z-index: 10000;
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    
+    .modal-content {
+        background-color: #000000;
+        margin: auto;
+        padding: 0;
+        border: none;
+        width: 80%; 
+        height: 100%;
+        position: relative;
+        transition: width 1s;
+    }
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        margin: 10px;
+        cursor: pointer;
+        transition: all ease-in-out 0.3s;
+    }
+    .close:hover {
+        color: #ffffff;
+        font-size: 29px;
+    }
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #525252;
+        color: #ece8e8;
+        padding: 10px 20px;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        width: 200px;
+        text-align: center;
+        transition: all ease-in-out 0.3s;
+        box-shadow: 10px 2px 20px rgba(158, 158, 158, 0.32),-10px -4px 20px rgba(158, 158, 158, 0.32);
+    }
+    .close-btn:hover {
+        background-color: #494949;
+    }
+    #pdfViewer {
+        border: none;
+        width: 100%;
+        height: calc(100% - 50px);
+    }
+    .expand-btn {
+        border: none;
+        background-color: #525252;
+        cursor: pointer;
+        color: #ece8e8;
+        width: 90px;
+        border-radius: 0 10px 10px 0;
+        height: 53px;
+        font-size: 19px;
+        box-shadow: 10px 2px 20px rgba(158, 158, 158, 0.32);
+        transition: all ease-in-out 0.5s;
+    }
+    .expand-btn:hover {
+        width: 100px;
+    }
+}
+@media (min-width: 540px) and (max-width: 768px) {
+    * {
+        transition: all 1s;
+    }
+    body {
+        background-image: url("bg7.png");
+        background-repeat: no-repeat;
+        background-size: 8000px;
+        margin-top: 90px;
+    }
+    ::-webkit-scrollbar {
+        width: 4px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background-color: #ece8e8;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: #1b1f1c;
+        border-radius: 100px;
+    }
+    .fixed {
+        width: 100%;
+        height: 60px;
+        background-image: url("bg8.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+    }
+    .fixed a {
+        text-decoration: none;
+    }
+    .adress {
+        background-color: rgba(255, 255, 255, 0.904);
+        width: 200px;
+        height: 61px;
+        padding-bottom: 6px;
+        border: none;
+        border-radius: 10px 0 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        float: right;
+    }
+    .adress h2 {
+        font-family: "Amiri", serif;
+        font-size: 32px;
+        color: #000;
+    }
+    .hr1 {
+        clear: both;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.589);
+        border: none;
+        position: fixed;
+        top: 60px;
+    }
+    
+    .section-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .section-1 div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 350px;
+        height: 75px;
+        background-color: #1b1f1c;
+        border: none;
+        border-radius: 5px;
+        color: #ece8e8;
+        margin: 10px;
+        cursor: pointer;
+        box-shadow: 0 12px 18px rgba(0, 0, 0, 0.23), 0 -4px 18px rgba(0, 0, 0, 0.32);
+        padding: 0 15px; /* عشان تسيب مساحة داخلية يمين وشمال */
+    }
+    .section-1 div:hover {
+        background-color: #222723;
+    }
+    .section-1 span {
+        font-size: 55px;
+        color: #1daa61;
+        position: absolute;
+        order: 1;
+        margin-right: 5px;
+    }
+    .section-1 h2 {
+        font-size: 20px;
+        order: 2; /* بيكون على اليمين */
+        margin-left: auto; /* يدفعه لاقصى اليمين */
+        font-size: 16px; /* تقدر تعدل الحجم حسب احتياجك */
+    }
+    .modal {
+        display: none; 
+        position: fixed; 
+        z-index: 10000; 
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    
+    .modal-content {
+        background-color: #000000;
+        margin: auto;
+        padding: 0;
+        border: none;
+        width: 80%; 
+        height: 100%;
+        position: relative;
+        transition: width 1s;
+    }
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        margin: 10px;
+        cursor: pointer;
+        transition: all ease-in-out 0.3s;
+    }
+    .close:hover {
+        color: #ffffff;
+        font-size: 29px;
+    }
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #525252;
+        color: #ece8e8;
+        padding: 10px 20px;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        width: 200px;
+        text-align: center;
+        transition: all ease-in-out 0.3s;
+        box-shadow: 10px 2px 20px rgba(158, 158, 158, 0.32),-10px -4px 20px rgba(158, 158, 158, 0.32);
+    }
+    .close-btn:hover {
+        background-color: #494949;
+    }
+    #pdfViewer {
+        border: none;
+        width: 100%;
+        height: calc(100% - 50px);
+    }
+    .expand-btn {
+        border: none;
+        background-color: #525252;
+        cursor: pointer;
+        color: #ece8e8;
+        width: 90px;
+        border-radius: 0 10px 10px 0;
+        height: 53px;
+        font-size: 19px;
+        box-shadow: 10px 2px 20px rgba(158, 158, 158, 0.32);
+        transition: all ease-in-out 0.5s;
+    }
+    .expand-btn:hover {
+        width: 100px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1149px) {
+    * {
+        transition: all 1s;
+    }
+    body {
+        background-image: url("bg7.png");
+        background-repeat: no-repeat;
+        background-size: 7000px;
+        margin-top: 90px;
+    }
+    ::-webkit-scrollbar {
+        width: 4px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background-color: #ece8e8;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: #1b1f1c;
+        border-radius: 100px;
+    }
+    .fixed {
+        width: 100%;
+        height: 62px;
+        background-image: url("bg8.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+    }
+    .fixed a {
+        text-decoration: none;
+    }
+    .adress {
+        background-color: rgba(255, 255, 255, 0.904);
+        width: 280px;
+        height: 62px;
+        padding-bottom: 10px;
+        border: none;
+        border-radius: 10px 0 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        float: right;
+    }
+    .adress h2 {
+        font-family: "Amiri", serif;
+        font-size: 38px;
+        color: #000;
+    }
+    .hr1 {
+        clear: both;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.589);
+        border: none;
+        position: fixed;
+        top: 62px;
+    }
+    
+    .section-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .section-1 div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 350px;
+        height: 75px;
+        background-color: #1b1f1c;
+        border: none;
+        border-radius: 5px;
+        color: #ece8e8;
+        margin: 10px;
+        cursor: pointer;
+        box-shadow: 0 12px 18px rgba(0, 0, 0, 0.23), 0 -4px 18px rgba(0, 0, 0, 0.32);
+        padding: 0 15px; /* عشان تسيب مساحة داخلية يمين وشمال */
+    }
+    .section-1 div:hover {
+        background-color: #222723;
+    }
+    .section-1 span {
+        font-size: 55px;
+        color: #1daa61;
+        position: absolute;
+        order: 1;
+        margin-right: 5px;
+    }
+    .section-1 h2 {
+        font-size: 20px;
+        order: 2; /* بيكون على اليمين */
+        margin-left: auto; /* يدفعه لاقصى اليمين */
+        font-size: 16px; /* تقدر تعدل الحجم حسب احتياجك */
+    }
+    .modal {
+        display: none; 
+        position: fixed; 
+        z-index: 10000; 
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    
+    .modal-content {
+        background-color: #000000;
+        margin: auto;
+        padding: 0;
+        border: none;
+        width: 80%; 
+        height: 100%;
+        position: relative;
+        transition: width 1s;
+    }
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        margin: 10px;
+        cursor: pointer;
+        transition: all ease-in-out 0.3s;
+    }
+    .close:hover {
+        color: #ffffff;
+        font-size: 29px;
+    }
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #525252;
+        color: #ece8e8;
+        padding: 10px 20px;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        width: 200px;
+        text-align: center;
+        transition: all ease-in-out 0.3s;
+        box-shadow: 10px 2px 20px rgba(158, 158, 158, 0.32),-10px -4px 20px rgba(158, 158, 158, 0.32);
+    }
+    .close-btn:hover {
+        background-color: #494949;
+    }
+    #pdfViewer {
+        border: none;
+        width: 100%;
+        height: calc(100% - 50px);
+    }
+    .expand-btn {
+        border: none;
+        background-color: #525252;
+        cursor: pointer;
+        color: #ece8e8;
+        width: 90px;
+        border-radius: 0 10px 10px 0;
+        height: 53px;
+        font-size: 19px;
+        box-shadow: 10px 2px 20px rgba(158, 158, 158, 0.32);
+        transition: all ease-in-out 0.5s;
+    }
+    .expand-btn:hover {
+        width: 100px;
+    }
+}
+@media (min-width: 1150px) {
+    * {
+        transition: all 1s;
+    }
+    body {
+        background-image: url("bg7.png");
+        background-repeat: no-repeat;
+        background-size: 5000px;
+        margin-top: 100px;
+    }
+    ::-webkit-scrollbar {
+        width: 4px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background-color: #ece8e8;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: #1b1f1c;
+        border-radius: 100px;
+    }
+    .fixed {
+        width: 100%;
+        height: 72px;
+        background-image: url("bg8.png");
+        background-repeat: no-repeat;
+        background-size: 5000px;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+    }
+    .adress {
+        background-color: rgba(255, 255, 255, 0.904);
+        width: 300px;
+        height: 72px;
+        border: none;
+        border-radius: 10px 0 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        float: right;
+    }
+    .adress h2 {
+        font-family: "Amiri", serif;
+        font-size: 40px;
+        color: #000;
+    }
+    .hr1 {
+        clear: both;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.589);
+        border: none;
+        position: fixed;
+        top: 72px;
+    }
+    .section-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+    .section-1 div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 350px;
+        height: 75px;
+        background-color: #1b1f1c;
+        border: none;
+        border-radius: 5px;
+        color: #ece8e8;
+        margin: 10px;
+        cursor: pointer;
+        box-shadow: 0 12px 18px rgba(0, 0, 0, 0.23), 0 -4px 18px rgba(0, 0, 0, 0.32);
+        padding: 0 15px; /* عشان تسيب مساحة داخلية يمين وشمال */
+    }
+    .section-1 div:hover {
+        background-color: #222723;
+    }
+    .section-1 span {
+        font-size: 55px;
+        color: #1daa61;
+        position: relative;
+        order: 1;
+        margin-right: 5px;
+    }
+    .section-1 h2 {
+        font-size: 20px;
+        order: 2; /* بيكون على اليمين */
+        margin-left: auto; /* يدفعه لاقصى اليمين */
+        font-size: 16px; /* تقدر تعدل الحجم حسب احتياجك */
+    }
+    .modal {
+        display: none; 
+        position: fixed; 
+        z-index: 10000; 
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    
+    .modal-content {
+        background-color: #000000;
+        margin: auto;
+        padding: 0;
+        border: none;
+        width: 80%; 
+        height: 100%;
+        position: relative;
+        transition: width 1s;
+    }
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        margin: 10px;
+        cursor: pointer;
+        transition: all ease-in-out 0.3s;
+    }
+    .close:hover {
+        color: #ffffff;
+        font-size: 29px;
+    }
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #525252;
+        color: #ece8e8;
+        padding: 10px 20px;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        width: 200px;
+        text-align: center;
+        transition: all ease-in-out 0.3s;
+        box-shadow: 10px 2px 20px rgba(158, 158, 158, 0.32),-10px -4px 20px rgba(158, 158, 158, 0.32);
+    }
+    .close-btn:hover {
+        background-color: #494949;
+    }
+    #pdfViewer {
+        border: none;
+        width: 100%;
+        height: calc(100% - 50px);
+    }
+    .expand-btn {
+        border: none;
+        background-color: #525252;
+        cursor: pointer;
+        color: #ece8e8;
+        width: 90px;
+        border-radius: 0 10px 10px 0;
+        height: 53px;
+        font-size: 19px;
+        box-shadow: 10px 2px 20px rgba(158, 158, 158, 0.32);
+        transition: all ease-in-out 0.5s;
+    }
+    .expand-btn:hover {
+        width: 100px;
+    }
+}
