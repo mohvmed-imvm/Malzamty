@@ -12,6 +12,7 @@
         background-repeat: no-repeat;
         background-size: 8000px;
         margin-top: 90px;
+        overflow: auto;
     }
     ::-webkit-scrollbar {
         width: 4px;
@@ -68,7 +69,68 @@
         position: fixed;
         top: 50px;
     }
+    .menu {
+        background-image: url("bg8.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        top: 51px;
+        border-bottom: transparent solid 1px;
+        justify-content: flex-end;
+        align-items: center;
+        z-index: 1000;
+        gap:0px;
+    }
+    .menu a {
+        text-decoration: none;
+    }
+    .special {
+        border-bottom: #ffffff solid 3px;
+    }
+    .menu div {
+        position: relative;
+        background: transparent;
+        height: 40px;
+        width: fit-content;
+        padding: 10px;
+    }
     
+    .menu div::before,
+    .menu div::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 3px;
+        width: 0;
+        background-color: #ffffff;
+        transition: width 0.5s ease-in-out;
+    }
+    
+    .menu div::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .menu div::after {
+        right: 50%;
+        transform: translateX(50%);
+    }
+    
+    .menu div:hover:not(.special)::before,
+    .menu div:hover:not(.special)::after {
+        width: 100%;
+    }
+    
+    .menu h3 {
+        color: #ece8e8;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: 200;
+    }
     .section-1 {
         display: flex;
         justify-content: center;
@@ -79,7 +141,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 350px;
+        width: 70%;
         height: 75px;
         background-color: #1b1f1c;
         border: none;
@@ -181,7 +243,7 @@
         width: 100px;
     }
 }
-@media (min-width: 540px) and (max-width: 768px) {
+@media (min-width: 540px) and (max-width: 784px) {
     * {
         transition: all 1s;
     }
@@ -189,7 +251,7 @@
         background-image: url("bg7.png");
         background-repeat: no-repeat;
         background-size: 8000px;
-        margin-top: 90px;
+        margin-top: 120px;
     }
     ::-webkit-scrollbar {
         width: 4px;
@@ -246,7 +308,68 @@
         position: fixed;
         top: 60px;
     }
+    .menu {
+        background-image: url("bg8.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        top: 61px;
+        border-bottom: transparent solid 1px;
+        justify-content: flex-end;
+        align-items: center;
+        z-index: 1000;
+        gap:0px;
+    }
+    .menu a {
+        text-decoration: none;
+    }
+    .special {
+        border-bottom: #ffffff solid 3px;
+    }
+    .menu div {
+        position: relative;
+        background: transparent;
+        height: 40px;
+        width: fit-content;
+        padding: 10px;
+    }
     
+    .menu div::before,
+    .menu div::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 3px;
+        width: 0;
+        background-color: #ffffff;
+        transition: width 0.5s ease-in-out;
+    }
+    
+    .menu div::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .menu div::after {
+        right: 50%;
+        transform: translateX(50%);
+    }
+    
+    .menu div:hover:not(.special)::before,
+    .menu div:hover:not(.special)::after {
+        width: 100%;
+    }
+    
+    .menu h3 {
+        color: #ece8e8;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: 200;
+    }
     .section-1 {
         display: flex;
         justify-content: center;
@@ -260,8 +383,8 @@
         width: 350px;
         height: 75px;
         background-color: #1b1f1c;
-        border: none;
-        border-radius: 5px;
+        border: 1px solid rgba(255, 255, 255, 0.185);
+        border-radius: 8px;
         color: #ece8e8;
         margin: 10px;
         cursor: pointer;
@@ -272,7 +395,7 @@
         background-color: #222723;
     }
     .section-1 span {
-        font-size: 55px;
+        font-size: 45px;
         color: #1daa61;
         position: absolute;
         order: 1;
@@ -296,7 +419,9 @@
     }
     
     .modal-content {
-        background-color: #000000;
+        background-image: url("bg7.png");
+        background-repeat: no-repeat;
+        background-size: cover;
         margin: auto;
         padding: 0;
         border: none;
@@ -306,7 +431,7 @@
         transition: width 1s;
     }
     .close {
-        color: #aaa;
+        color: #1b1f1c;
         float: right;
         font-size: 28px;
         font-weight: bold;
@@ -315,28 +440,34 @@
         transition: all ease-in-out 0.3s;
     }
     .close:hover {
-        color: #ffffff;
+        color: #343835;
         font-size: 29px;
     }
     .close-btn {
         position: absolute;
         top: 10px;
         left: 50%;
-        transform: translateX(-50%);
-        background-color: #525252;
-        color: #ece8e8;
+        transform: translate(-50%,-15%);
+        color: #15884d;
         padding: 10px 20px;
         font-size: 18px;
-        border: none;
+        font-weight: 200;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #1b1f1c;
+        border: 1px solid rgba(255, 255, 255, 0.185);
         cursor: pointer;
         border-radius: 5px;
         width: 200px;
         text-align: center;
-        transition: all ease-in-out 0.3s;
-        box-shadow: 10px 2px 20px rgba(158, 158, 158, 0.32),-10px -4px 20px rgba(158, 158, 158, 0.32);
+        transition: all ease-in-out 0.1s;
+        box-shadow: 10px 2px 20px rgba(0, 0, 0, 0.32),-10px -4px 20px rgba(0, 0, 0, 0.32);
+    }
+    .close-btn h3 {
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
     }
     .close-btn:hover {
-        background-color: #494949;
+        background-color: #242925;
     }
     #pdfViewer {
         border: none;
@@ -344,35 +475,34 @@
         height: calc(100% - 50px);
     }
     .expand-btn {
-        border: none;
-        background-color: #525252;
+        background-color: #1b1f1c;
+        border: 1px solid rgba(255, 255, 255, 0.185);
         cursor: pointer;
-        color: #ece8e8;
+        color: #15884d;
         width: 90px;
         border-radius: 0 10px 10px 0;
         height: 53px;
-        font-size: 19px;
-        box-shadow: 10px 2px 20px rgba(158, 158, 158, 0.32);
-        transition: all ease-in-out 0.5s;
-    }
-    .expand-btn:hover {
-        width: 100px;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        box-shadow: 10px 2px 20px rgba(0, 0, 0, 0.32);
     }
 }
-@media (min-width: 769px) and (max-width: 1149px) {
+@media (min-width: 785px) and (max-width: 1149px) {
     * {
         transition: all 1s;
     }
     body {
         background-image: url("bg7.png");
         background-repeat: no-repeat;
-        background-size: 7000px;
-        margin-top: 90px;
+        background-size: 3000px;
+        margin-top: 130px;
+        margin-bottom: 500px;
+        overflow: auto;
     }
     ::-webkit-scrollbar {
         width: 4px;
     }
-    
     ::-webkit-scrollbar-track {
         background-color: #ece8e8;
     }
@@ -383,22 +513,18 @@
     }
     .fixed {
         width: 100%;
-        height: 62px;
+        height: 72px;
         background-image: url("bg8.png");
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 3000px;
         position: fixed;
         top: 0;
         z-index: 1000;
     }
-    .fixed a {
-        text-decoration: none;
-    }
     .adress {
         background-color: rgba(255, 255, 255, 0.904);
-        width: 280px;
-        height: 62px;
-        padding-bottom: 10px;
+        width: 300px;
+        height: 72px;
         border: none;
         border-radius: 10px 0 0 10px;
         display: flex;
@@ -408,29 +534,90 @@
         position: fixed;
         right: 0;
         top: 0;
-        float: right;
     }
     .adress h2 {
         font-family: "Amiri", serif;
-        font-size: 38px;
+        font-size: 40px;
         color: #000;
     }
     .hr1 {
         clear: both;
         width: 100%;
         height: 1px;
-        background-color: rgba(255, 255, 255, 0.589);
+        background-color: rgb(255, 255, 255);
         border: none;
         position: fixed;
-        top: 62px;
+        top: 72px;
+        z-index: 1000;
+    }
+    .menu {
+        background-image: url("bg8.png");
+        background-size: 3000px;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        top: 72.5px;
+        border-bottom: transparent solid 1px;
+        justify-content: flex-end;
+        align-items: center;
+        z-index: 1000;
+        gap:10px;
+    }
+    .menu a {
+        text-decoration: none;
+    }
+    .special {
+        border-bottom: #ffffff solid 3px;
+    }
+    .menu div {
+        position: relative;
+        background: transparent;
+        height: 50px;
+        width: fit-content;
+        padding: 15px;
     }
     
+    .menu div::before,
+    .menu div::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 3px;
+        width: 0;
+        background-color: #ffffff;
+        transition: width 0.5s ease-in-out;
+    }
+    
+    .menu div::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .menu div::after {
+        right: 50%;
+        transform: translateX(50%);
+    }
+    
+    .menu div:hover:not(.special)::before,
+    .menu div:hover:not(.special)::after {
+        width: 100%;
+    }
+    
+    .menu h3 {
+        color: #ece8e8;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: 200;
+    }
     .section-1 {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 20px;
     }
     .section-1 div {
         display: flex;
@@ -453,9 +640,10 @@
     .section-1 span {
         font-size: 55px;
         color: #1daa61;
-        position: absolute;
+        position: relative;
         order: 1;
         margin-right: 5px;
+        z-index: 10;
     }
     .section-1 h2 {
         font-size: 20px;
