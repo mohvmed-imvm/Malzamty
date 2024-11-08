@@ -12,32 +12,48 @@
 </head>
 <body>
     <div class="fixed">
-        <div class="adress">
-            <h2>ملزمتي</h2>
-        </div>
-        <hr class="hr1">
+        <a href="index.html">
+            <div class="adress">
+                <h2>ملزمتي</h2>
+            </div>
+        </a>
     </div>
+    <hr class="hr1">
     <div class="menu">
         <a href="">
-            <div><h3>عربي</h3></div>
+            <div>
+                <h3>French</h3>
+            </div>
         </a>
         <a href="">
-            <div><h3>Maths</h3></div>
+            <div>
+                <h3>Maths</h3>
+            </div>
         </a>
         <a href="">
-            <div><h3>Science</h3></div>
+            <div>
+                <h3>Science</h3>
+            </div>
         </a>
         <a href="">
-            <div><h3>دراسات</h3></div>
+            <div>
+                <h3>دراسات</h3>
+            </div>
         </a>
         <a href="">
-            <div><h3>English</h3></div>
+            <div>
+                <h3>English</h3>
+            </div>
         </a>
         <a href="">
-            <div><h3>English (high level)</h3></div>
+            <div>
+                <h3>English (high level)</h3>
+            </div>
         </a>
         <a href="">
-            <div><h3>French</h3></div>
+            <div class="special">
+                <h3>عربي</h3>
+            </div>
         </a>
     </div>
     <div class="section-1">
@@ -57,7 +73,23 @@
             <span class="material-symbols-outlined">picture_as_pdf</span>
         </div>
     </div>
-
+    <div class="section-1">
+        <div data-pdf="prova.pdf">
+            <span class="material-symbols-outlined">picture_as_pdf</span>
+        </div>
+        <div data-pdf="ACE Scanner_2024_09_24.pdf">
+            <span class="material-symbols-outlined">picture_as_pdf</span>
+        </div>
+        <div data-pdf="file3.pdf">
+            <span class="material-symbols-outlined">picture_as_pdf</span>
+        </div>
+        <div data-pdf="file4.pdf">
+            <span class="material-symbols-outlined">picture_as_pdf</span>
+        </div>
+        <div data-pdf="file5.pdf">
+            <span class="material-symbols-outlined">picture_as_pdf</span>
+        </div>
+    </div>
     <div class="section-1">
         <div data-pdf="file6.pdf">
             <span class="material-symbols-outlined">picture_as_pdf</span>
@@ -152,8 +184,8 @@
     <div id="pdfModal" class="modal">
         <div class="modal-content">
             <span class="close" id="closeModal">&times;</span>
-            <button class="close-btn" id="closeButton">Close</button>
-            <button class="expand-btn" id="expandButton">تكبير</button> <!-- زرار تكبير -->
+            <button class="close-btn" id="closeButton"><h3>Close</h3></button>
+            <button class="expand-btn" id="expandButton">Zoom in</button> <!-- زرار تكبير -->
             <iframe id="pdfViewer" src="file1.pdf"></iframe>
         </div>
     </div>
