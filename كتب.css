@@ -180,9 +180,7 @@
     }
     
     .modal-content {
-        background-image: url("bg7.png");
-        background-repeat: no-repeat;
-        background-size: cover;
+        background: #222723;
         margin: auto;
         padding: 0;
         border: none;
@@ -192,7 +190,7 @@
         transition: width 1s;
     }
     .close {
-        color: #1b1f1c;
+        color: #105732;
         float: right;
         font-size: 28px;
         font-weight: bold;
@@ -201,20 +199,20 @@
         transition: all ease-in-out 0.3s;
     }
     .close:hover {
-        color: #343835;
+        color: #1a7e4a;
         font-size: 29px;
     }
     .close-btn {
         position: absolute;
         top: 10px;
         left: 50%;
-        transform: translate(-50%,-10%);
-        color: #15884d;
+        transform: translate(-50%,-8%);
+        color: #00813e;
         padding: 10px 20px;
-        font-size: 13px;
+        font-size: 12px;
         font-weight: 200;
         font-family: Arial, Helvetica, sans-serif;
-        background-color: #1b1f1c;
+        background-color: #323632;
         border: 1px solid rgba(255, 255, 255, 0.185);
         cursor: pointer;
         border-radius: 5px;
@@ -228,7 +226,7 @@
         font-family: Arial, Helvetica, sans-serif;
     }
     .close-btn:hover {
-        background-color: #242925;
+        background-color: #1a1d1a;
     }
     #pdfViewer {
         border: none;
@@ -236,17 +234,16 @@
         height: calc(100% - 50px);
     }
     .expand-btn {
-        background-color: #1b1f1c;
-        border: 1px solid rgba(255, 255, 255, 0.185);
+        background-color: transparent;
+        border: none;
         cursor: pointer;
-        color: #15884d;
-        width: 80px;
-        border-radius: 0 10px 10px 0;
+        color: #087a40;
+        width: 45px;
+        border-radius: 10px;
         height: 53px;
-        font-size: 13px;
+        font-size: 18px;
         font-family: Arial, Helvetica, sans-serif;
-        font-weight: 600;
-        box-shadow: 10px 2px 20px rgba(0, 0, 0, 0.32);
+        font-weight: 800;
     }
 }
 @media (min-width: 540px) and (max-width: 784px) {
@@ -425,9 +422,7 @@
     }
     
     .modal-content {
-        background-image: url("bg7.png");
-        background-repeat: no-repeat;
-        background-size: cover;
+        background: #222723;
         margin: auto;
         padding: 0;
         border: none;
@@ -437,7 +432,7 @@
         transition: width 1s;
     }
     .close {
-        color: #1b1f1c;
+        color: #105732;
         float: right;
         font-size: 28px;
         font-weight: bold;
@@ -446,7 +441,7 @@
         transition: all ease-in-out 0.3s;
     }
     .close:hover {
-        color: #343835;
+        color: #1a7e4a;
         font-size: 29px;
     }
     .close-btn {
@@ -454,12 +449,12 @@
         top: 10px;
         left: 50%;
         transform: translate(-50%,-15%);
-        color: #15884d;
+        color: #00813e;
         padding: 10px 20px;
         font-size: 15px;
         font-weight: 200;
         font-family: Arial, Helvetica, sans-serif;
-        background-color: #1b1f1c;
+        background-color: #323632;
         border: 1px solid rgba(255, 255, 255, 0.185);
         cursor: pointer;
         border-radius: 5px;
@@ -481,17 +476,16 @@
         height: calc(100% - 50px);
     }
     .expand-btn {
-        background-color: #1b1f1c;
-        border: 1px solid rgba(255, 255, 255, 0.185);
+        background-color: transparent;
+        border: none;
         cursor: pointer;
-        color: #15884d;
-        width: 80px;
-        border-radius: 0 10px 10px 0;
+        color: #087a40;
+        width: 40px;
+        border-radius: 10px;
         height: 53px;
-        font-size: 15px;
+        font-size: 20px;
         font-family: Arial, Helvetica, sans-serif;
-        font-weight: 600;
-        box-shadow: 10px 2px 20px rgba(0, 0, 0, 0.32);
+        font-weight: 800;
     }
 }
 @media (min-width: 785px) and (max-width: 1149px) {
@@ -669,9 +663,7 @@
     }
     
     .modal-content {
-        background-image: url("bg7.png");
-        background-repeat: no-repeat;
-        background-size: cover;
+        background: #222723;
         margin: auto;
         padding: 0;
         border: none;
@@ -681,7 +673,7 @@
         transition: width 1s;
     }
     .close {
-        color: #1b1f1c;
+        color: #105732;
         float: right;
         font-size: 28px;
         font-weight: bold;
@@ -690,7 +682,7 @@
         transition: all ease-in-out 0.3s;
     }
     .close:hover {
-        color: #343835;
+        color: #1a7e4a;
         font-size: 29px;
     }
     .close-btn {
@@ -698,16 +690,16 @@
         top: 10px;
         left: 50%;
         transform: translate(-50%,-15%);
-        color: #15884d;
+        color: #00813e;
         padding: 10px 20px;
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 200;
         font-family: Arial, Helvetica, sans-serif;
-        background-color: #1b1f1c;
+        background-color: #323632;
         border: 1px solid rgba(255, 255, 255, 0.185);
         cursor: pointer;
         border-radius: 5px;
-        width: 200px;
+        width: 130px;
         text-align: center;
         transition: all ease-in-out 0.1s;
         box-shadow: 10px 2px 20px rgba(0, 0, 0, 0.32),-10px -4px 20px rgba(0, 0, 0, 0.32);
@@ -725,17 +717,16 @@
         height: calc(100% - 50px);
     }
     .expand-btn {
-        background-color: #1b1f1c;
-        border: 1px solid rgba(255, 255, 255, 0.185);
+        background-color: transparent;
+        border: none;
         cursor: pointer;
-        color: #15884d;
-        width: 90px;
-        border-radius: 0 10px 10px 0;
+        color: #087a40;
+        width: 40px;
+        border-radius: 10px;
         height: 53px;
-        font-size: 18px;
+        font-size: 20px;
         font-family: Arial, Helvetica, sans-serif;
-        font-weight: 600;
-        box-shadow: 10px 2px 20px rgba(0, 0, 0, 0.32);
+        font-weight: 800;
     }
 }
 @media (min-width: 1150px) {
@@ -913,9 +904,7 @@
     }
     
     .modal-content {
-        background-image: url("bg7.png");
-        background-repeat: no-repeat;
-        background-size: cover;
+        background: #222723;
         margin: auto;
         padding: 0;
         border: none;
@@ -925,7 +914,7 @@
         transition: width 1s;
     }
     .close {
-        color: #1b1f1c;
+        color: #105732;
         float: right;
         font-size: 28px;
         font-weight: bold;
@@ -934,7 +923,7 @@
         transition: all ease-in-out 0.3s;
     }
     .close:hover {
-        color: #343835;
+        color: #1a7e4a;
         font-size: 29px;
     }
     .close-btn {
@@ -942,12 +931,12 @@
         top: 10px;
         left: 50%;
         transform: translate(-50%,-15%);
-        color: #15884d;
+        color: #00813e;
         padding: 10px 20px;
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 200;
         font-family: Arial, Helvetica, sans-serif;
-        background-color: #1b1f1c;
+        background-color: #323632;
         border: 1px solid rgba(255, 255, 255, 0.185);
         cursor: pointer;
         border-radius: 5px;
@@ -969,16 +958,15 @@
         height: calc(100% - 50px);
     }
     .expand-btn {
-        background-color: #1b1f1c;
-        border: 1px solid rgba(255, 255, 255, 0.185);
+        background-color: transparent;
+        border: none;
         cursor: pointer;
-        color: #15884d;
-        width: 90px;
-        border-radius: 0 10px 10px 0;
+        color: #087a40;
+        width: 40px;
+        border-radius: 10px;
         height: 53px;
-        font-size: 18px;
+        font-size: 20px;
         font-family: Arial, Helvetica, sans-serif;
-        font-weight: 600;
-        box-shadow: 10px 2px 20px rgba(0, 0, 0, 0.32);
+        font-weight: 800;
     }
 }
