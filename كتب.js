@@ -44,10 +44,10 @@ window.onclick = function(event) {
 expandButton.onclick = function() {
     if (!isExpanded) {
         modalContent.style.width = '100%';
-        expandButton.textContent = 'تصغير'; // تغيير النص إلى "تصغير"
+        expandButton.textContent = 'Zoom out'; // تغيير النص إلى "تصغير"
     } else {
         modalContent.style.width = '80%';
-        expandButton.textContent = 'تكبير'; // تغيير النص إلى "تكبير"
+        expandButton.textContent = 'Zoom in'; // تغيير النص إلى "تكبير"
     }
     isExpanded = !isExpanded; // تغيير الحالة
 };
